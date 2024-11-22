@@ -121,11 +121,12 @@ header i {
   background-color: var(--primary-color);
   color: white !important;
 }
-.links a:hover {
+.btn-num:hover {
   transition: all 0.2s linear;
-  background-color: white;
+  background-color: #b07fd5;
   color: black;
 }
+
 .links {
   display: none;
 }
@@ -282,11 +283,11 @@ header i {
 .agenda .agenda-txt a:hover,
 .container-map a:hover {
   transition: all 0.275s linear;
-  background-color: black;
+  background-color: #b07fd5;
   color: white;
 }
 .container-servicios {
-  margin-top: 400px;
+  margin-top: 0px;
   flex-direction: column;
   padding: 0 1rem;
   text-align: center;
@@ -315,7 +316,7 @@ header i {
   width: 300px;
   height: 300px;
   position: relative;
-
+  background-color: #5e2373;
   -webkit-box-shadow: 7px 7px 16px -1px rgba(197, 197, 197, 0.99);
   -moz-box-shadow: 7px 7px 16px -1px rgba(197, 197, 197, 0.99);
   box-shadow: 7px 7px 16px -1px rgba(197, 197, 197, 0.99);
@@ -323,21 +324,26 @@ header i {
 .subtitle {
   margin: 10px 0;
 }
+.card-servicio p {
+  color: white;
+}
 .card-servicio a {
   padding: 10px 50px;
-  background-color: #28b0d1;
+  background-color: white;
   border-radius: 5px;
-  color: white;
+  color: #5e2373;
   position: absolute;
   bottom: -20px;
   transition: all 0.275s linear;
+  border: 1px solid #5e2373;
 }
 .card-servicio a:hover {
   transition: all 0.275s linear;
-  background-color: black;
+  background-color: #b07fd5;
 }
 .card-servicio h4 {
   font-size: 1.4em;
+  color: white;
 }
 .container .container-max-1200 .card-servicio img {
   width: 80px;
@@ -348,10 +354,11 @@ header i {
   align-items: center;
   flex-direction: column;
 }
-.container-cards button {
-  margin-top: 40px;
+.container-cards button,
+.promotions button {
+  margin-top: 50px;
   padding: 10px 30px;
-  background-color: #28b0d1;
+  background-color: #5e2373;
   border-radius: 5px;
   color: white;
   border: none;
@@ -361,9 +368,10 @@ header i {
 }
 .container-cards button:hover {
   transition: all 0.275s linear;
-  background-color: black;
+  background-color: #b07fd5;
 }
-#hide-services {
+#hide-services,
+#hide-promociones {
   display: none;
 }
 .nosotros {
@@ -382,11 +390,15 @@ header i {
   flex-direction: column;
   color: black;
 }
+#Promociones {
+  margin-top: 360px;
+}
 .swiper-up h3,
 .swiper-up h4,
 .promotions h4,
 .promotions h3 {
   text-align: center;
+  color: #5e2373;
 }
 .txt-us h4,
 .swiper-up h4,
@@ -394,6 +406,7 @@ header i {
 .promotions h4 {
   font-size: 20px;
   font-weight: 300;
+  color: #5e2373;
 }
 .txt-us h3,
 .swiper-up h3,
@@ -401,20 +414,21 @@ header i {
 .promotions h3 {
   font-size: 2em;
   font-weight: 300;
+  color: #5e2373;
 }
 .txt-us hr,
 .swiper-up hr,
 .container-direction hr,
 .container-footer hr,
 .promotions hr {
-  color: #28b0d1;
+  color: #5e2373;
   width: 100px;
   border: 1px solid;
   margin: 10px 0 30px 0;
 }
 .txt-us a {
   padding: 10px 25px;
-  background-color: #28b0d1;
+  background-color: #5e2373;
   color: white;
   border-radius: 5px;
   transition: all 0.275s ease-in-out;
@@ -422,20 +436,20 @@ header i {
 }
 .txt-us a:hover {
   transition: all 0.275s ease-in-out;
-  background-color: black;
+  background-color: #b07fd5;
 }
 .txt-us p {
   color: black;
 }
 .txt-us ul {
   text-align: left;
-  padding: 0 1rem;
+  padding: 0 0rem 0 1rem;
 }
 .txt-us ul li {
   margin-bottom: 15px;
 }
 .txt-us ul li::marker {
-  color: #28b0d1;
+  color: #5e2373;
 }
 .container-us {
   background-image: url(../img/dentist-elements.webp);
@@ -508,11 +522,7 @@ header i {
 .container-map {
   border-radius: 10px;
   padding: 30px 1rem;
-  background: linear-gradient(
-    45deg,
-    rgba(37, 207, 214, 0.97) 46%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background-color: #5e2373;
   margin: 20px 0;
   color: white;
   display: flex;
@@ -524,6 +534,7 @@ header i {
   font-size: 1.5em;
   margin-bottom: 15px;
   font-weight: 500;
+  color: white;
 }
 .container-map p:nth-child(2),
 .container-map p:nth-child(4),
@@ -558,13 +569,13 @@ header i {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #2e9eba;
+  background-color: #5e2373;
   font-size: 25px;
   transition: all 0.275s ease-in-out;
 }
 .social-media a:hover {
-  background-color: aliceblue;
-  color: black;
+  background-color: #b07fd5;
+  color: white;
   transition: all 0.275s ease-in-out;
 }
 .social-media {
@@ -636,7 +647,7 @@ header i {
 }
 .promotions {
   flex-direction: column;
-  padding: 60px 1rem;
+  padding: 20px 1rem;
 }
 .grid-promotions {
   display: grid;
@@ -648,13 +659,19 @@ header i {
 .grid-promotions img {
   width: 100%;
   transition: all 0.275s ease-in-out;
-  border: 5px solid gold;
+  border: 5px solid #5e2373;
 }
 .grid-promotions a:hover > img {
   transition: all 0.275s ease-in-out;
   transform: rotate(5deg);
 }
+.servi h3 {
+  color: #5e2373;
+}
 @media (min-width: 768px) {
+  #Promociones {
+    margin-top: 30px;
+  }
   .hero-container .hero-txt a {
     margin-top: 10px;
     padding: 10px 20px;
@@ -715,7 +732,7 @@ header i {
   }
   .agendar:hover {
     transition: all 0.275s ease-in;
-    background-color: black;
+    transform: scale(0.9);
   }
   .links {
     display: flex;
@@ -764,26 +781,30 @@ header i {
     font-size: 35px;
   }
   .container-servicios {
-    margin-top: 130px;
+    margin-top: 0px;
   }
-  .container-servicios h3 {
+  .servi h3 {
     font-size: 2.8em;
-    max-width: 900px;
+
     font-weight: 300;
-    color: #5e2373;
+    color: #5e2373 !important;
   }
   .container-servicios .subtitle {
     margin-top: 20px;
     font-size: 20px;
     max-width: 700px;
-    color: #5e2373;
+    color: #5e2373 !important;
   }
   .container-cards {
-    margin-top: 50px;
+    margin-top: 0px;
   }
-  .container-cards button {
-    margin-top: 70px;
+  .container-cards button,
+  .promotions button {
+    margin-top: 50px;
     font-size: 20px;
+  }
+  .promotions button:hover {
+    background-color: #b07fd5;
   }
   .servicios {
     grid-template-columns: repeat(3, 1fr);
